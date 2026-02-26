@@ -41,7 +41,7 @@ if uploaded_file:
         st.image(input_img, caption=f"Original Feed: {uploaded_file.name}", width=500)
 
         # Button to start the 10-minute presentation
-        if st.button("Start Processing Pipeline (10 Minutes)"):
+        if st.button("Start Processing Pipeline"):
             # Reset tracking flags for a fresh run
             st.session_state.phases_shown = {k: False for k in st.session_state.phases_shown}
             
